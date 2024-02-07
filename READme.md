@@ -10,4 +10,12 @@ This is the project where the user can send the input data and it is going to sh
 If you wanna contribute or run it locally or deploy on your own server, please follow these instruction:
 
 1. Clone the repository using the following command:
-    git clone 
+    - git clone https://github.com/jha-niraj/Form-Emittor.git
+
+2. As there is no independecies in the project you don;t need to install anything.
+
+3. Run the Live Server from the HTML File.
+
+4. Make sure to pull changes from the github, as I am going to make continiuos changes to the projects.
+
+# Voila, you are good to go.
