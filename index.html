@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Emitter</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+
+        }
+        .first-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            margin: 10px;
+            padding: 20px;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        #btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid #ddd;
+            font-family: sans-serif;
+        }          
+        th, td {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        td {
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-div">
+            <form action="#">
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName" placeholder="Enter your first name"><br>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" id="lastName" placeholder="Enter your last name"><br>
+                <label for="age">Age</label><br>
+                <input type="text" id="age" placeholder="Enter your age"><br>
+                <label for="country">Country</label><br>
+                <input type="text" id="country" placeholder="Enter your Country name"><br>
+                <label for="place">Favourite Place</label><br>
+                <input type="text" id="place" placeholder="Enter your favourite place"><br>
+
+                <input type="button" value="Save Data" id="btn">
+            </form>
+        </div>
+        <div class="second-div">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                        <th>Favourite Place</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
